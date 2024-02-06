@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy';
+    font-family: 'PlayFair Display', Work Sans;
 }
 
 body,
@@ -16,27 +16,27 @@ html {
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    padding: 0 80px;
+    padding-top: 100px;
+    gap: 60px;
+    overflow-y: auto;
 }
 
 #left {
     height: 100%;
-    width: 48%;
-
-    padding: 60px;
+    width: 50%;
+    padding: 50px;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-#right {
-    height: 100%;
-    width: 48%;
 
-}
 
 #left h1 {
     font-size: 90px;
-    font-family: 'PlayFair Display', Work Sans;
+
     line-height: 100px;
     font-weight: 500;
 }
@@ -63,7 +63,7 @@ html {
     width: 20px;
     border-radius: 50%;
     margin: 3px;
-    background: burlywood;
+    background: rgba(52, 84, 224, 0.88);
 }
 
 #color2 {
@@ -81,9 +81,74 @@ html {
 
 #left p {
     font-size: 20px;
-    width: 90%;
+    width: 70%;
     font-weight: 600;
     color: #444;
     line-height: 30px;
 
+}
+
+#right {
+    height: 100%;
+    width: 33%;
+    
+    position: relative;
+}
+
+#right-top {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#right-top h4 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#right-top h5 {
+    font-size: 20;
+
+}
+
+#right-top h5 i {
+    color: goldenrod;
+}
+
+#right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#circle {
+    position: absolute;
+    top: 24%;
+    right: -14%;
+    height: 120px;
+    width: 120px;
+    background-color: #444;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#circle h5 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#rotated-title {
+    position: absolute;
+    left: -10%;
+    bottom: 3%;
+    rotate: -90deg;
+    transform-origin: 0 0;
+    font-size: 30px;
+    font-weight: 500;
 }
