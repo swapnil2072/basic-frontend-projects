@@ -17,9 +17,9 @@ html {
     width: 100%;
     display: flex;
     align-items: flex-end;
-    padding: 0 80px;
-    padding-top: 100px;
-    gap: 60px;
+    padding: 0 7.5vw;
+    padding-top: 8.7vw;
+    gap: 5.6vw;
     overflow-y: auto;
 }
 
@@ -35,9 +35,9 @@ html {
 
 
 #left h1 {
-    font-size: 90px;
+    font-size: 8vw;
 
-    line-height: 100px;
+    line-height: 8.8vw;
     font-weight: 500;
 }
 
@@ -53,45 +53,45 @@ html {
 }
 
 #colors h5 {
-    font-size: 20px;
+    font-size: 1.7vw;
     margin-right: 10px;
     font-weight: 500;
 }
 
 #color1 {
-    height: 20px;
-    width: 20px;
+    height: 1.8vw;
+    width: 2vw;
     border-radius: 50%;
     margin: 3px;
     background: rgba(52, 84, 224, 0.88);
 }
 
 #color2 {
-    height: 20px;
-    width: 20px;
+    height: 1.8vw;
+    width: 2vw;
     border-radius: 50%;
     background: brown;
 }
 
 #left h2 {
     margin-top: 50px;
-    font-size: 30px;
+    font-size: 2vw;
     margin-bottom: 10px;
 }
 
 #left p {
-    font-size: 20px;
+    font-size: 1.4vw;
     width: 70%;
     font-weight: 600;
     color: #444;
-    line-height: 30px;
+    line-height: 2vw;
 
 }
 
 #right {
     height: 100%;
     width: 33%;
-    
+
     position: relative;
 }
 
@@ -151,4 +151,149 @@ html {
     transform-origin: 0 0;
     font-size: 30px;
     font-weight: 500;
+}
+
+@media (max-width:600px) {
+    #main {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5vw;
+        padding-top: 6vw;
+        gap: 5.6vh;
+        overflow-y: auto;
+    }
+
+    #left {
+        height: fit-content;
+        width: 100%;
+        padding: 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+
+    #left h1 {
+        font-size: 15vw;
+
+        line-height: 16vw;
+        font-weight: 500;
+    }
+
+    #colors {
+        margin-top: 20vw;
+        margin-bottom: 8vw;
+        width: fit-content;
+        padding: 2vw 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 40px;
+    }
+
+    #colors h5 {
+        font-size: 3.5vw;
+        font-weight: 500;
+    }
+
+    #color1 {
+        height: 3.8vw;
+        width: 4vw;
+        border-radius: 50%;
+        margin: 1vw;
+        background: rgba(52, 84, 224, 0.88);
+    }
+
+    #color2 {
+        height: 3.8vw;
+        width: 4vw;
+        border-radius: 50%;
+        background: brown;
+    }
+
+    #left h2 {
+        margin-top: 4vw;
+        font-size: 6vw;
+        margin-bottom: 2vw;
+    }
+
+    #left p {
+        font-size: 2vw;
+        width: 100%;
+        font-weight: 600;
+        color: #444;
+        line-height: 3vw;
+    }
+
+    #right {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    #right-top {
+        height: 7vw;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #right-top h4 {
+        font-size: 4.5vw;
+        font-weight: 500;
+    }
+
+    #right-top h5 {
+        font-size: 3vw;
+
+    }
+
+    #right-top h5 i {
+        color: goldenrod;
+    }
+
+    #right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    #circle {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        height: 25vw;
+        width: 25vw;
+        background-color: #444;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        transform: translate(50%,-50%);
+    }
+
+    #circle h5 {
+        font-size: 4vw;
+        font-weight: 500;
+    }
+
+    #rotated-title {
+        position: absolute;
+        left: 3%;
+        top: -5%;
+        rotate: 0deg;
+        font-size: 5vw;
+        font-weight: 500;
+    }
 }
